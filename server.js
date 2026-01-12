@@ -13,8 +13,7 @@ app.use(express.json());
 // NVIDIA NIM API configuration
 const NIM_API_BASE = process.env.NIM_API_BASE || 'https://integrate.api.nvidia.com/v1';
 const NIM_API_KEY = process.env.NIM_API_KEY;
-const NIM_MAX_MODEL_LEN = 131072;
-  
+
 // 🔥 REASONING DISPLAY TOGGLE - Shows/hides reasoning in output
 const SHOW_REASONING = false; // Set to true to show reasoning with <think> tags
 
@@ -97,7 +96,7 @@ app.post('/v1/chat/completions', async (req, res) => {
       model: nimModel,
       messages: messages,
       temperature: temperature || 0.6,
-      max_tokens: max_tokens || 131072,
+      max_tokens: max_tokens || 9024,
       extra_body: ENABLE_THINKING_MODE ? { chat_template_kwargs: { thinking: true } } : undefined,
       stream: stream || false
     };
