@@ -24,7 +24,7 @@ const ENABLE_THINKING_MODE = true; // Set to true to enable chat_template_kwargs
 const MODEL_MAPPING = {
   'gpt-3.5-turbo': 'mistralai/mistral-large-3-675b-instruct-2512',
   'gpt-4': 'z-ai/glm4.7',
-  'gpt-4-turbo': 'qwen/qwen3.5-397b-a17b',
+  'gpt-4-turbo': 'moonshotai/kimi-k2-instruct-0905',
   'gpt-4o': 'z-ai/glm5',
   'claude-3-opus': 'moonshotai/kimi-k2.5',
   'claude-3-sonnet': 'moonshotai/kimi-k2-thinking',
