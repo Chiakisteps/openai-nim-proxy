@@ -1,4 +1,4 @@
-// server.js - OpenAI to NVIDIA NIM API Proxy
+minimaxai/minimax-m2.7// server.js - OpenAI to NVIDIA NIM API Proxy
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
@@ -25,7 +25,7 @@ const MODEL_MAPPING = {
   'gpt-3.5-turbo': 'mistralai/mistral-large-3-675b-instruct-2512',
   'gpt-4': 'z-ai/glm-5.1',
   'gpt-4-turbo': 'google/gemma-4-31b-it',
-  'gpt-4o': 'z-ai/glm-4.7',
+  'gpt-4o': 'minimaxai/minimax-m2.7',
   'claude-3-opus': 'moonshotai/kimi-k2.6',
   'claude-3-sonnet': 'moonshotai/kimi-k2-thinking',
   'gemini-pro': 'deepseek-ai/deepseek-v4-pro' 
